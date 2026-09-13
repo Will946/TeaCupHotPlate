@@ -1,8 +1,8 @@
 **Tea Cozy Hotplate**
 =====================================
 
-![PCB Render](<Tea Cozy Hotplate.jpg>)
-![PCB Photo](DSC05820.JPG)
+![PCB Render](<Hotplate.png>)
+![PCB Photo](Hotplate.JPG)
 
 ### Overview
 
@@ -10,7 +10,7 @@ The Tea Cozy Hotplate is a USB-C powered, closed-loop temperature-controlled hot
 
 ### How It Works
 
-![PCB Schematic](<Tea Cozy Hotplate.svg>)
+![PCB Schematic](<HotplateSch.svg>)
 
 **Power in.** 5V arrives on the USB-C receptacle (`J2`), passes through a pair of 1.5A resettable (PTC) fuses on VBUS, and is clamped by an `SRV05` ESD protection array on D+/D- and the CC lines. A single 2.2 ohm sense resistor pair plus 5.1kΩ pull downs on CC1/CC2 tell the upstream USB-C source the board is a fixed 5V/1.4A(ish) legacy sink. There is no PD negotiation chip, just resistor based CC termination, so any 5V USB-C source works. A `XC6206P332MR` LDO steps 5V down to a clean 3.3V rail for the MCU, LEDs, and sensors. A Zener (`D2`, ZMM5V6) sits across VBUS as extra transient protection.
 
@@ -61,8 +61,8 @@ The Tea Cozy Hotplate is a USB-C powered, closed-loop temperature-controlled hot
 
 ## JLCPCB Heater Coil (1mm PCB with 1oz/ft^2)
 
-![Heater Coil PCB Trace](<Heater Coil.png>)
-![KiCad Coil Generator Settings](<Coil Generator Settings.png>)
+![Heater Coil PCB Trace](<image-1.png>)
+![KiCad Coil Generator Settings](<image.png>)
 
 * **Trace**: 2.8m length, 0.55mm width, 1oz/ft^2
 * **Calculated Resistance**: 2.47Ω (assuming 0.000017Ω.mm)
