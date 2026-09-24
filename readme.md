@@ -2,7 +2,7 @@
 =====================================
 
 ![PCB Render](<Hotplate.png>)
-![PCB Photo](Hotplate.JPG)
+![PCB Photo](Hotplate.jpeg)
 
 ### Overview
 
